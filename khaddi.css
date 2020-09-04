@@ -113,7 +113,7 @@ form.searchBtn button:hover {
 
 /* Add underline for each li in nav */
 .homeinfo li {
-    border-bottom: 1px solid #878787;
+    border-bottom: 1px solid #f0f0f0;
     line-height: 1.75;
 }
 
