@@ -1,17 +1,16 @@
-
 * {
     padding: 0%;
     margin: 0%;
     font-family: "Poppins", arial, tahoma;
-
+    box-sizing: border-box;
 }
 
-.red{
+.red {
     color: red;
 }
 
-
 /* h5 text  */
+
 header h5 {
     color: white;
     background-color: black;
@@ -19,6 +18,7 @@ header h5 {
 }
 
 /* logo image in center  */
+
 .centerImg {
     margin-top: 20px;
     display: block;
@@ -27,14 +27,15 @@ header h5 {
 }
 
 /* Add a black background color to the top navigation bar */
+
 .topnav {
     margin-top: 20px;
     /* overflow: hidden; */
     background-color: #e9e9e9;
-
 }
 
 /* Style the links inside the navigation bar */
+
 .topnav a {
     display: inline-block;
     text-align: center;
@@ -44,16 +45,15 @@ header h5 {
     font-size: 17px;
 }
 
-
-
 /* Change the color of links on hover */
+
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
-
 /* Style the search field */
+
 form.searchBtn input[type=text] {
     position: relative;
     padding: 10px;
@@ -63,6 +63,7 @@ form.searchBtn input[type=text] {
 }
 
 /* Style the submit button */
+
 form.searchBtn button {
     width: auto;
     padding: 10px;
@@ -76,42 +77,46 @@ form.searchBtn button {
 }
 
 /* Color changed when hover over search button */
+
 form.searchBtn button:hover {
     background-color: #ddd;
     color: black;
 }
 
-
 /* Search bar with button move to right */
+
 .searchBar {
     float: right;
 }
 
 /* Nav text align to center */
+
 .topnavText {
     text-align: center;
 }
 
 /* Home page information white space on both sides */
+
 .homeinfo {
     width: 1300px;
     margin: auto;
     /* float: left; */
-    
 }
 
 /* h4 nav */
+
 .homeinfo h4 {
     padding-top: 6%;
 }
 
 /* remove bullets */
+
 .homeinfo ul {
     list-style-type: none;
-    
 }
 
 /* Add underline for each li in nav */
+
 .homeinfo li {
     border-bottom: 1px solid #f0f0f0;
     line-height: 1.75;
@@ -119,46 +124,43 @@ form.searchBtn button:hover {
 
 a:link {
     text-decoration: none;
-  }
+}
 
-  a:link {
+a:link {
     text-decoration: none;
-  }
-  
+}
 
 .button {
     margin-top: 2%;
     border: none;
-    color: black;
-    background-color: whitesmoke;
+    
     padding: 5px;
     text-align: center;
     text-decoration: none;
     font-size: 12px;
     border-radius: 12px;
-    background-color: white;
-    border: 2px solid #555555;
+    border: 1px solid;
+    box-shadow: none;
 }
 
 /* Change the color of buttons on hover */
+
 .button:hover {
-    background-color: #ddd;
+    border: 2px solid gray;
     color: black;
 }
 
 .product-item {
-    
     width: 225px;
     height: auto;
-     float: left; 
+    float: left;
     padding-right: 10px;
-    
 }
 
 /* row 1 images */
+
 .product-item img {
-    
- width: 100%;
+    width: 100%;
     height: 300px;
     max-width: 100%;
 }
@@ -167,22 +169,20 @@ a:link {
     float: left;
     clear: both;
     padding: 5px 0px 5px 0px;
-    
 }
 
-.price{
+.price {
     color: red;
     font-size: 12px;
     font-family: "Montserrat";
     font-weight: 700;
 }
 
-
 /* first row alignment */
+
 .row {
     padding-top: 2%;
     float: left;
-    
 }
 
 /* Left nav width and align */
@@ -193,12 +193,156 @@ a:link {
 }
 
 /* right nav width and align */
+
 .rightSection {
     width: 1000px;
     float: left;
+}
+
+/* Footer */
+
+/* .footer {
+    background-color: gray;
+    float: left;
+    color: black;
+    height: 400px;
+    width: 100%;
+    position: relative;
+} */
+
+/* bottom footer */
+/* .footer-bottom {
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+     bottom: 0px;
+    left: 0px;
+    
+    
+} */
+
+/* .footer-bottom{
+    background-color: black;
+} */
+
+
+
+.copyright{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+.row {
+    width: 100%;
     
 }
 
-.footer{
-    background-color: blue;
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.margin-bottom30 {
+    margin-bottom: 30px;
+}
+
+/* Footer headings */
+
+h6 {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
+    line-height: 1.428;
+    letter-spacing: .5px;
+    display: block;
+}
+
+/* Remove bullet point from footer content */
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    line-height: 1.75;
+}
+
+/* Remove link blue color */
+
+a {
+    color: inherit;
+}
+
+.column .newsletter-inner {
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    float: left;
+    margin-top: 10px;
+}
+
+.column .newsletter-inner input[type='email'] {
+    width: 64%;
+    background: #f6f6f8;
+    border: none;
+    float: left;
+    border-radius: 30px;
+    padding-left: 10px;
+    height: 38px;
+    padding-top: 2px;
+}
+
+.column .newsletter-inner input[type='submit'] {
+    width: 36%;
+    height: 38px;
+    border-radius: 30px;
+    box-shadow: none;
+    border: none;
+    background: #222;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #fff;
+}
+
+.column .email-input-wrapper-sama .checkAccept {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.checkAccept input {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px 0 0;
+}
+
+.checkAccept{float: left;}
+
+.column .email-input-wrapper-sama .checkAccept {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.column label {
+    font-size: 14px;
+    color: #000;
+}
+
+.footer .row .column{
+    background-color: whitesmoke;
 }
